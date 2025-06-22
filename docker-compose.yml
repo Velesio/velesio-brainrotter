@@ -39,10 +39,17 @@ services:
       - app-network
 
   kokoro-tts:
-    image: ghcr.io/remsky/kokoro-fastapi-cpu:v0.2.2
+    image: ghcr.io/remsky/kokoro-fastapi-gpu:v0.2.2
     container_name: kokoro-tts
     ports:
       - "8880:8880"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
     environment:
       - PORT=8880
     restart: unless-stopped
@@ -53,11 +60,11 @@ services:
     image: baserow/baserow:1.32.5
     container_name: baserow-app
     ports:
-      - "85:80"
+      - "80:80"
       - "443:443"
       - "3000:3000"
     environment:
-      - BASEROW_PUBLIC_URL=http://baserow:80
+      - BASEROW_PUBLIC_URL=http://host.docker.internal:80
       - BASEROW_CADDY_ADDRESSES=:80
     volumes:
       - ./baserow-data:/baserow/data

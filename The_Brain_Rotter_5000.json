@@ -1,5 +1,5 @@
 {
-  "name": "The Brain Rotter 5000",
+  "name": "Brainrotter",
   "nodes": [
     {
       "parameters": {
@@ -24,10 +24,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        -380,
-        -60
+        20,
+        160
       ],
-      "id": "cb08c0bb-2aad-4090-95b5-26a53e4b75bf",
+      "id": "58e2f558-9c10-47d0-8abc-9ec3b35b2a2d",
       "name": "Set Idea"
     },
     {
@@ -44,15 +44,15 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        560,
-        2120
+        960,
+        2340
       ],
-      "id": "0e762da2-0102-44e6-981f-d2224d89ee3d",
+      "id": "f9b287ac-89e5-4e65-be5c-77fddcd1bed6",
       "name": "Create Clips",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "PyOUIkYAEA1wGedz",
-          "name": "NCA-Toolkit"
+          "id": "2gXsBksh7ObGENOA",
+          "name": "Header Auth account"
         }
       }
     },
@@ -72,15 +72,15 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        700,
-        2440
+        1100,
+        2660
       ],
-      "id": "6114d4bd-36b0-428b-9f07-59913ecc201d",
+      "id": "7bfa5b3a-6efb-44bc-90c4-9045afd9b0d9",
       "name": "Combine Clips",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "PyOUIkYAEA1wGedz",
-          "name": "NCA-Toolkit"
+          "id": "2gXsBksh7ObGENOA",
+          "name": "Header Auth account"
         }
       }
     },
@@ -98,10 +98,10 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        280,
-        2440
+        680,
+        2660
       ],
-      "id": "850b28f7-d02c-454b-b76b-4d7164df315e",
+      "id": "bb1bfe0b-a669-41d1-9157-e1cd2a905524",
       "name": "Aggregate1"
     },
     {
@@ -114,10 +114,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -400,
-        2020
+        0,
+        2240
       ],
-      "id": "ff3e20dc-864e-411e-8c01-1a29b30b475e",
+      "id": "c19bc8b5-6432-4ac9-8b53-43c2b4d26309",
       "name": "Sticky Note2"
     },
     {
@@ -130,10 +130,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -400,
-        2360
+        0,
+        2580
       ],
-      "id": "45ca78b5-1449-4d4a-865c-1e2405aeae2d",
+      "id": "b1c379cf-dcb3-48a9-9b2e-1890b6eea60e",
       "name": "Sticky Note3"
     },
     {
@@ -143,10 +143,10 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 3,
       "position": [
-        300,
-        2100
+        700,
+        2320
       ],
-      "id": "0b17e604-b20b-453b-9fba-49c28e2b6fbd",
+      "id": "44c4369c-1af6-4330-b767-b7e61bb15762",
       "name": "Loop Over Items3"
     },
     {
@@ -156,10 +156,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        480,
-        2440
+        880,
+        2660
       ],
-      "id": "81a25dc7-9301-4384-b79c-bec981b404e2",
+      "id": "9f0fc0f7-07da-4d61-9260-6be6dfd8b394",
       "name": "Video url to array"
     },
     {
@@ -172,10 +172,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -400,
-        2940
+        0,
+        3160
       ],
-      "id": "a35812e7-cdf5-4251-9eb1-46da4c11d704",
+      "id": "5f0d4ec5-ef03-4133-bdb6-38973dd13054",
       "name": "Sticky Note6"
     },
     {
@@ -194,15 +194,15 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        -140,
-        2760
+        260,
+        2980
       ],
-      "id": "ee10bd53-e8bc-4594-90d0-5ec281e9d217",
+      "id": "5edeffe2-d749-4315-b6eb-be342431b8aa",
       "name": "Combine Clips3",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "PyOUIkYAEA1wGedz",
-          "name": "NCA-Toolkit"
+          "id": "2gXsBksh7ObGENOA",
+          "name": "Header Auth account"
         }
       }
     },
@@ -220,15 +220,15 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        -140,
-        3280
+        260,
+        3500
       ],
-      "id": "96884711-0a46-4d2d-b3a6-e2e92af2db73",
+      "id": "f07aaf0b-3d48-4e54-b93b-7fcfbde8dcbe",
       "name": "Add Music",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "PyOUIkYAEA1wGedz",
-          "name": "NCA-Toolkit"
+          "id": "2gXsBksh7ObGENOA",
+          "name": "Header Auth account"
         }
       }
     },
@@ -242,10 +242,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -400,
-        2680
+        0,
+        2900
       ],
-      "id": "d0cdafa8-5458-47e3-8b1d-4629a156276c",
+      "id": "578d4806-6b9b-4d48-bd0f-9e126a5d9d3f",
       "name": "Sticky Note7"
     },
     {
@@ -256,10 +256,10 @@
       "type": "n8n-nodes-base.splitOut",
       "typeVersion": 1,
       "position": [
-        -140,
-        2440
+        260,
+        2660
       ],
-      "id": "f7d9e08b-997c-4d10-8b70-7bf5dbc6bbe9",
+      "id": "e96dd66f-823f-4e78-bc86-ee6a936711a3",
       "name": "Split Out1"
     },
     {
@@ -272,10 +272,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -400,
-        -220
+        0,
+        0
       ],
-      "id": "70fad9af-9255-4201-9f0f-c14b7865cf59",
+      "id": "68fe7369-9430-4b99-808e-887eb8b7e72a",
       "name": "Sticky Note"
     },
     {
@@ -294,10 +294,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        -340,
-        580
+        60,
+        800
       ],
-      "id": "c0667e6f-8015-405a-a826-adbe6abba079",
+      "id": "f83c6910-9d08-44cb-aa15-82e4f167e2ab",
       "name": "Get Captions"
     },
     {
@@ -318,10 +318,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        -140,
-        360
+        260,
+        580
       ],
-      "id": "c56a5e26-2e3e-4354-ad07-43b7ba0c1ea3",
+      "id": "3eeab9bf-b355-49fb-9c9f-9b0c4a54f843",
       "name": "Generate TTS"
     },
     {
@@ -334,10 +334,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -400,
-        300
+        0,
+        520
       ],
-      "id": "4699115a-b739-4468-b951-7ff8e3afe14e",
+      "id": "25b47e28-7c6c-4a27-bab5-b921633a3566",
       "name": "Sticky Note1"
     },
     {
@@ -349,10 +349,10 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        0,
-        900
+        400,
+        1120
       ],
-      "id": "bc20705a-0316-4e5e-acc4-e170363558ea",
+      "id": "c8789ccd-630d-4095-b581-76b9558b1ddb",
       "name": "Aggregate"
     },
     {
@@ -363,10 +363,10 @@
       "type": "n8n-nodes-base.splitOut",
       "typeVersion": 1,
       "position": [
-        520,
-        900
+        920,
+        1120
       ],
-      "id": "29c86528-19ee-4ee6-981f-6bfe36061d22",
+      "id": "0cb0e2c3-9b8d-401a-83f4-95f15e71f4b0",
       "name": "Split Out"
     },
     {
@@ -376,10 +376,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        360,
-        900
+        760,
+        1120
       ],
-      "id": "beba6e7f-88a3-4958-82e9-af00e6f0ebb9",
+      "id": "715f820b-c9f7-45ff-8e1b-383fed93fc5b",
       "name": "Fixer"
     },
     {
@@ -392,10 +392,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -400,
-        820
+        0,
+        1040
       ],
-      "id": "92022e7d-f1a5-43d8-a94e-2bbd65db34a1",
+      "id": "f554892a-1b6a-4835-a629-8083b440027b",
       "name": "Sticky Note4"
     },
     {
@@ -406,10 +406,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        -180,
-        900
+        220,
+        1120
       ],
-      "id": "ac608fbb-8e83-425d-b7dc-07266d855525",
+      "id": "17c9c483-06e9-4d3c-95b5-e4a007504911",
       "name": "Get Segment File"
     },
     {
@@ -419,10 +419,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        180,
-        900
+        580,
+        1120
       ],
-      "id": "c2697bb2-eb0c-4361-8c27-4fc6fe530583",
+      "id": "bedc1caf-ec68-47f4-b297-55992fa0fbb2",
       "name": "Split into 5s Scenes"
     },
     {
@@ -435,10 +435,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -400,
-        3200
+        0,
+        3420
       ],
-      "id": "4689421e-ba08-496f-b3ef-047869f2146c",
+      "id": "69b097d6-3bd8-493f-9b99-52829142ea3a",
       "name": "Sticky Note8"
     },
     {
@@ -457,15 +457,15 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        -140,
-        3020
+        260,
+        3240
       ],
-      "id": "0052bd55-cb4b-43a2-8bff-2f9f0975d725",
+      "id": "5fd5f086-6867-4de5-ace4-29b2e7ea9a8b",
       "name": "Create Captions",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "PyOUIkYAEA1wGedz",
-          "name": "NCA-Toolkit"
+          "id": "2gXsBksh7ObGENOA",
+          "name": "Header Auth account"
         }
       }
     },
@@ -478,7 +478,7 @@
           "filters": {
             "fields": [
               {
-                "field": 6684,
+                "field": 6637,
                 "value": "={{ $json.id }}"
               }
             ]
@@ -488,15 +488,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        0,
-        2100
+        400,
+        2320
       ],
-      "id": "566944ed-da22-4bb1-9ef0-d9110f9893ca",
+      "id": "1b9cb67a-4de8-40f6-9182-5a6cc105d4e1",
       "name": "Baserow4",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -509,7 +509,7 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6622,
+              "fieldId": 6637,
               "fieldValue": "={{ $json.response }}"
             }
           ]
@@ -518,15 +518,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        760,
-        2120
+        1160,
+        2340
       ],
-      "id": "85a5f4fc-f192-472d-baab-bf9089968b7e",
+      "id": "70b50b38-d985-455d-b4bb-6716c0511502",
       "name": "Baserow5",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -539,7 +539,7 @@
           "filters": {
             "fields": [
               {
-                "field": 6707,
+                "field": 6634,
                 "operator": "empty"
               }
             ]
@@ -549,15 +549,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        -360,
-        2760
+        40,
+        2980
       ],
-      "id": "66c377c8-9122-48b5-ba29-a8c1c0e3c51d",
+      "id": "508eecf6-b35b-490e-abf9-e0dedb1180aa",
       "name": "Baserow11",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -570,7 +570,7 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6623,
+              "fieldId": 6633,
               "fieldValue": "={{ $json.response[0].file_url }}"
             }
           ]
@@ -579,15 +579,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        80,
-        2760
+        480,
+        2980
       ],
-      "id": "2081ce85-0d8e-41c7-a71f-3d58c6a00168",
+      "id": "e252100c-60bf-4ee1-9b04-5c7d4d2a67d9",
       "name": "Baserow12",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -600,11 +600,11 @@
           "filters": {
             "fields": [
               {
-                "field": 6708,
+                "field": 6629,
                 "operator": "empty"
               },
               {
-                "field": 6705,
+                "field": 6634,
                 "operator": "contains",
                 "value": "Processing"
               }
@@ -615,15 +615,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        -360,
-        3020
+        40,
+        3240
       ],
-      "id": "aec4bdf4-3f7b-4cb8-a109-4b38ec565f8e",
+      "id": "b04aaca1-a59c-4ff0-830f-84d01a71ce87",
       "name": "Baserow13",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -636,7 +636,7 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6624,
+              "fieldId": 6634,
               "fieldValue": "={{ $json.response }}"
             }
           ]
@@ -645,15 +645,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        80,
-        3020
+        480,
+        3240
       ],
-      "id": "3f0d8900-1a63-4dbd-aa1a-c21fc1839162",
+      "id": "d2c05923-1682-458a-ad79-4aaf95c49376",
       "name": "Baserow14",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -666,11 +666,11 @@
           "filters": {
             "fields": [
               {
-                "field": 6709,
+                "field": 6622,
                 "operator": "empty"
               },
               {
-                "field": 6705,
+                "field": 6634,
                 "operator": "contains",
                 "value": "Processing"
               }
@@ -681,15 +681,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        -380,
-        3280
+        20,
+        3500
       ],
-      "id": "77f1d836-a7bb-48a9-9d64-be552ed6ef4b",
+      "id": "1ee15601-076b-4d65-bb5b-5399c4bb25af",
       "name": "Baserow15",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -869,10 +869,10 @@
       "type": "n8n-nodes-base.formTrigger",
       "typeVersion": 2.2,
       "position": [
-        -1420,
-        1380
+        -1100,
+        1580
       ],
-      "id": "9a7a4fa7-d286-4364-9934-0cbacd6a48a1",
+      "id": "b1927737-68c0-41b5-847e-4a353cc2fc63",
       "name": "On form submission",
       "webhookId": "3b749a18-39ca-4f86-9f0d-c3de1cf8a05f"
     },
@@ -884,10 +884,10 @@
       "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
       "typeVersion": 1.2,
       "position": [
-        640,
-        160
+        1040,
+        380
       ],
-      "id": "56c8eb10-de42-4bd1-858d-2240be9cde0b",
+      "id": "d09f32da-addc-4141-9967-5cf187525e7d",
       "name": "Structured Output Parser1"
     },
     {
@@ -897,10 +897,10 @@
       "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
       "typeVersion": 1.2,
       "position": [
-        880,
-        1000
+        1280,
+        1220
       ],
-      "id": "a84eeae2-e187-4dcf-87fb-287111aff224",
+      "id": "ce09c5ba-8183-4b34-875d-be1a59c70e2d",
       "name": "Structured Output Parser2"
     },
     {
@@ -918,16 +918,16 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.5,
       "position": [
-        60,
-        40
+        460,
+        260
       ],
-      "id": "f669a754-d86b-4344-a200-15129029194b",
+      "id": "19e5e6fb-60cb-4837-aa1d-8cdec4cf405e",
       "name": "Script Writier 🧠"
     },
     {
       "parameters": {
         "promptType": "define",
-        "text": "=User Imput:\n{{ $json.response.text }}",
+        "text": "=User Input:\n{{ $json.text }}",
         "hasOutputParser": true,
         "messages": {
           "messageValues": [
@@ -940,10 +940,10 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.5,
       "position": [
-        460,
-        -60
+        860,
+        160
       ],
-      "id": "16ab495b-7895-4ebd-bcec-1b23229bd96d",
+      "id": "0f873369-5c24-4bff-8c76-695e8966fb74",
       "name": "Output Parser 🛠"
     },
     {
@@ -1006,10 +1006,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        -200,
-        -60
+        200,
+        160
       ],
-      "id": "21e7270b-4b17-4679-bd6b-2b424e3a6fb7",
+      "id": "0beab6b2-a40e-4251-9a03-9e7291affbfb",
       "name": "Switch"
     },
     {
@@ -1028,10 +1028,10 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.5,
       "position": [
-        780,
-        860
+        1180,
+        1080
       ],
-      "id": "cfb942f3-bdbc-4dff-880f-2a1cb135a960",
+      "id": "f813d8e3-178b-4b60-85fa-2ecf3e2b2736",
       "name": "Image Prompter V2 📷"
     },
     {
@@ -1041,10 +1041,10 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 3,
       "position": [
-        -200,
-        1380
+        200,
+        1600
       ],
-      "id": "bb943bd7-954e-4445-9349-a23550718227",
+      "id": "836168fe-a9a9-4910-9e6a-1817ccbc624b",
       "name": "Loop Over Items"
     },
     {
@@ -1057,10 +1057,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -400,
-        1160
+        0,
+        1380
       ],
-      "id": "af65aa14-d96c-44e2-9895-b064644c3ed0",
+      "id": "8c5aaea8-90dd-45d2-808c-1087d01f10aa",
       "name": "Sticky Note11"
     },
     {
@@ -1070,10 +1070,10 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        1160,
-        1660
+        1560,
+        1880
       ],
-      "id": "0698a14f-8d70-4ba5-abc1-ebb39c014270",
+      "id": "c107c5fd-4697-4779-874d-a68f5b61c61c",
       "name": "Wait1",
       "webhookId": "417c1874-053b-4a23-b40b-2378fa533a7f"
     },
@@ -1086,7 +1086,7 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6716,
+              "fieldId": 6637,
               "fieldValue": "={{ $json.name }}"
             }
           ]
@@ -1095,15 +1095,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        1000,
-        1660
+        1400,
+        1880
       ],
-      "id": "9f86fe3d-ecc5-4e5e-be0a-4b8b6a86df35",
+      "id": "f82822cb-8a5e-4fef-8939-1325c6c69c79",
       "name": "Baserow21",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -1122,10 +1122,10 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.5,
       "position": [
-        60,
-        -180
+        460,
+        40
       ],
-      "id": "b03fc412-c87b-4860-9423-5176a057b810",
+      "id": "3495b45d-5140-4156-8848-19439e5dec92",
       "name": "Long form to Script Writier 🧠"
     },
     {
@@ -1136,35 +1136,35 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6625,
+              "fieldId": 6622,
               "fieldValue": "={{ $('Output Parser 🛠').item.json.output.Title }}"
             },
             {
-              "fieldId": 6626,
+              "fieldId": 6623,
               "fieldValue": "={{ $('Output Parser 🛠').item.json.output.Description }}"
             },
             {
-              "fieldId": 6627,
+              "fieldId": 6624,
               "fieldValue": "={{ $json.Script }}"
             },
             {
-              "fieldId": 6628,
+              "fieldId": 6632,
               "fieldValue": "={{ $('Set Idea').item.json['User Input'] }}"
             },
             {
-              "fieldId": 6629,
+              "fieldId": 6631,
               "fieldValue": "={{ $('On form submission').item.json['Generative Style'] }}"
             },
             {
-              "fieldId": 6630,
+              "fieldId": 6635,
               "fieldValue": "={{ $('On form submission').item.json['TTS Voice'] }}"
             },
             {
-              "fieldId": 6705,
+              "fieldId": 6634,
               "fieldValue": "Processing"
             },
             {
-              "fieldId": 6683,
+              "fieldId": 6636,
               "fieldValue": "={{ $('On form submission').item.json['Image Provider'] }}"
             }
           ]
@@ -1173,15 +1173,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        1200,
-        -60
+        1600,
+        160
       ],
-      "id": "b794106d-3bd7-435d-86c3-b45934af0a57",
+      "id": "e6aa2e8d-ceb5-44df-8317-96ab0c87f3a0",
       "name": "Baserow - Create record",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -1194,11 +1194,11 @@
           "filters": {
             "fields": [
               {
-                "field": 6706,
+                "field": 6629,
                 "operator": "empty"
               },
               {
-                "field": 6705,
+                "field": 6634,
                 "operator": "contains",
                 "value": "Processing"
               }
@@ -1209,15 +1209,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        -340,
-        2440
+        60,
+        2660
       ],
-      "id": "21d60809-503d-4d2f-8cc2-bd590c55ca2f",
+      "id": "07220449-a837-45e6-82f4-62c9f7fc619c",
       "name": "Get video",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -1229,7 +1229,7 @@
           "filters": {
             "fields": [
               {
-                "field": 6684,
+                "field": 6637,
                 "value": "={{ $json.id }}"
               }
             ]
@@ -1239,15 +1239,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        60,
-        2440
+        460,
+        2660
       ],
-      "id": "eac78039-22c1-4336-bb2b-8869169739f6",
+      "id": "fc870baa-530e-41c0-8181-6560b3416cf9",
       "name": "Get Scenes",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -1260,7 +1260,7 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6633,
+              "fieldId": 6634,
               "fieldValue": "={{ $json.response }}"
             }
           ]
@@ -1269,22 +1269,22 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        900,
-        2440
+        1300,
+        2660
       ],
-      "id": "c2525434-4eda-4c52-b665-20481d716cb9",
+      "id": "732a81da-d46f-41af-8f52-01588e5b75e9",
       "name": "Baserow",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
     {
       "parameters": {
         "method": "POST",
-        "url": "http://localhost:85/api/user-files/upload-file/",
+        "url": "http://host.docker.internal:80/api/user-files/upload-file/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -1303,15 +1303,19 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        60,
-        360
+        460,
+        580
       ],
-      "id": "9bf7a7a0-33f4-4736-bfd5-7d82d6845a56",
+      "id": "293daf30-c0b1-479c-807e-e88a047b2ef7",
       "name": "Upload tts to baserow",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "hBU71xYpGS5fc5hR",
-          "name": "baserow"
+          "id": "szXAJbaui7fn9EU5",
+          "name": "Header Auth account 2"
+        },
+        "httpBasicAuth": {
+          "id": "wfT72sLsZrTTTlSy",
+          "name": "Unnamed credential"
         }
       }
     },
@@ -1324,7 +1328,7 @@
           "filters": {
             "fields": [
               {
-                "field": 6705,
+                "field": 6634,
                 "operator": "contains",
                 "value": "Processing"
               }
@@ -1335,15 +1339,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        -340,
-        360
+        60,
+        580
       ],
-      "id": "f6bc476c-293a-4864-a091-1ff940249ce8",
+      "id": "fe04d8b0-c9a3-45c2-8c4b-dc22a1c9586f",
       "name": "Get records",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -1356,11 +1360,7 @@
           "filters": {
             "fields": [
               {
-                "field": 6714,
-                "operator": "empty"
-              },
-              {
-                "field": 6705,
+                "field": 6634,
                 "operator": "contains",
                 "value": "Processing"
               }
@@ -1371,15 +1371,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        -360,
-        880
+        40,
+        1100
       ],
-      "id": "0878dab7-92b9-4220-ba41-79d2fc3be244",
+      "id": "bd30f234-13bc-487e-9136-7c8456c20a61",
       "name": "Get records1",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -1392,11 +1392,11 @@
           "filters": {
             "fields": [
               {
-                "field": 6706,
+                "field": 6629,
                 "operator": "empty"
               },
               {
-                "field": 6705,
+                "field": 6634,
                 "operator": "contains",
                 "value": "Processing"
               }
@@ -1407,15 +1407,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        -360,
-        2100
+        40,
+        2320
       ],
-      "id": "4b035b25-a922-4ff0-bcb5-86e03cfe4640",
+      "id": "8ace2e6f-23ff-419f-b768-ee0fdc6d49ad",
       "name": "Get video1",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -1427,10 +1427,10 @@
       "type": "n8n-nodes-base.splitOut",
       "typeVersion": 1,
       "position": [
-        -180,
-        2100
+        220,
+        2320
       ],
-      "id": "c98b69ba-907f-400c-994e-9d9a60eede6d",
+      "id": "a0f60076-2f6b-43a7-b4ed-5ce8da425dda",
       "name": "Split Out2"
     },
     {
@@ -1442,11 +1442,11 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6634,
+              "fieldId": 6625,
               "fieldValue": "={{ $json.response[0].file_url }}"
             },
             {
-              "fieldId": 6705,
+              "fieldId": 6634,
               "fieldValue": "Done"
             }
           ]
@@ -1455,35 +1455,35 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        60,
-        3280
+        460,
+        3500
       ],
-      "id": "8567b939-357d-45a6-bae0-1ba9f5d6a6cc",
+      "id": "74b17e45-7a6a-4117-900d-ad2da7eb373f",
       "name": "Baserow1",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
     {
       "parameters": {
-        "model": "deepseek/deepseek-chat-v3-0324:free",
+        "model": "deepseek/deepseek-chat-v3-0324",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
       "typeVersion": 1,
       "position": [
-        380,
-        160
+        780,
+        380
       ],
-      "id": "94cdc4b4-e3e7-4896-96e4-9a5cfe0e8684",
+      "id": "90f97cc3-bd9d-4552-b70e-bb2f2f3a41ee",
       "name": "Open Router - Deepseek v3.1",
       "credentials": {
         "openRouterApi": {
-          "id": "pHqfI4j6vu0500KZ",
-          "name": "OpenRouter n8n search"
+          "id": "QkfutB9C8l5akDYY",
+          "name": "OpenRouter account"
         }
       }
     },
@@ -1494,15 +1494,15 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
       "typeVersion": 1,
       "position": [
-        720,
-        1000
+        1120,
+        1220
       ],
-      "id": "a398a4c9-5f9b-419e-bc43-421897732e6f",
+      "id": "07554b73-6425-4ae0-88af-37100801404e",
       "name": "Open Router - Deepseek v3.",
       "credentials": {
         "openRouterApi": {
-          "id": "pHqfI4j6vu0500KZ",
-          "name": "OpenRouter n8n search"
+          "id": "QkfutB9C8l5akDYY",
+          "name": "OpenRouter account"
         }
       }
     },
@@ -1523,10 +1523,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        800,
-        -60
+        1200,
+        160
       ],
-      "id": "6ddeec5d-0d14-433f-ae10-ad442ee4913d",
+      "id": "72a85196-7818-41f6-8c1c-8a402c6218e5",
       "name": "Combine"
     },
     {
@@ -1546,10 +1546,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        980,
-        -60
+        1380,
+        160
       ],
-      "id": "e4b1232a-0572-4628-851b-df9965518b28",
+      "id": "96416460-eb58-40d7-a71c-4f6a9c36a272",
       "name": "Format Cleanup"
     },
     {
@@ -1564,13 +1564,13 @@
         },
         "options": {}
       },
-      "id": "bf90d5c4-cf6d-4c7c-b40f-22e1bf3f5b57",
+      "id": "28eb1956-ef6d-437e-9329-e1ea517d01f8",
       "name": "Base64 To String",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.1,
       "position": [
-        480,
-        1660
+        880,
+        1880
       ]
     },
     {
@@ -1584,19 +1584,19 @@
           "mimeType": "image/png"
         }
       },
-      "id": "c049b6b5-e446-457e-a538-40c775cd52d7",
+      "id": "46b4745e-14df-46cd-b1f5-b64c75711593",
       "name": "Convert String to binary",
       "type": "n8n-nodes-base.moveBinaryData",
       "typeVersion": 1,
       "position": [
-        660,
-        1660
+        1060,
+        1880
       ]
     },
     {
       "parameters": {
         "method": "POST",
-        "url": "http://localhost:85/api/user-files/upload-file/",
+        "url": "http://host.docker.internal:80/api/user-files/upload-file/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -1615,22 +1615,22 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        840,
-        1660
+        1240,
+        1880
       ],
-      "id": "87d726cd-9d42-4b33-9a96-15df9d1dca6e",
+      "id": "9a200afd-3b1f-425f-81d9-a5004d70a6bb",
       "name": "HTTP - Upload To Baserow",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "hBU71xYpGS5fc5hR",
-          "name": "baserow"
+          "id": "szXAJbaui7fn9EU5",
+          "name": "Header Auth account 2"
         }
       }
     },
     {
       "parameters": {
         "method": "POST",
-        "url": "http://localhost:85/api/user-files/upload-file/",
+        "url": "http://host.docker.internal:80/api/user-files/upload-file/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -1649,15 +1649,15 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        -140,
-        580
+        260,
+        800
       ],
-      "id": "03674bf5-f040-4a94-bc48-4ceb56460b4a",
+      "id": "135cba3e-e1aa-4e42-b939-d648b068f15f",
       "name": "Upload captions To Baserow",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "hBU71xYpGS5fc5hR",
-          "name": "baserow"
+          "id": "szXAJbaui7fn9EU5",
+          "name": "Header Auth account 2"
         }
       }
     },
@@ -1670,11 +1670,11 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6635,
+              "fieldId": 6633,
               "fieldValue": "={{ $('Upload tts to baserow').item.json.name }}"
             },
             {
-              "fieldId": 6636,
+              "fieldId": 6630,
               "fieldValue": "={{ $json.url }}"
             }
           ]
@@ -1683,15 +1683,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        60,
-        580
+        460,
+        800
       ],
-      "id": "e2c2a760-1002-4a0e-a162-7ce31b66d306",
+      "id": "4cd3ac38-6a52-470c-8d53-179a49140db3",
       "name": "Update Record",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -1704,7 +1704,7 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6714,
+              "fieldId": 6629,
               "fieldValue": "={{ $json.ids }}"
             }
           ]
@@ -1713,15 +1713,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        1800,
-        860
+        2200,
+        1080
       ],
-      "id": "20e2d3ee-d9f3-4aaf-9fe2-85079adb9747",
+      "id": "9394b512-259e-4371-972f-405170c0f1eb",
       "name": "Baserow19",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -1732,10 +1732,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1600,
-        860
+        2000,
+        1080
       ],
-      "id": "19e83640-e1e3-4ce4-877a-5f2c2774ec7b",
+      "id": "0f9c4fd9-9f21-4f48-9ef4-bdce6b80161f",
       "name": "IDs To Array1"
     },
     {
@@ -1748,10 +1748,10 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        1380,
-        860
+        1780,
+        1080
       ],
-      "id": "d503bc2b-2d43-49de-bce5-13f6f5a656bc",
+      "id": "32e92707-2c18-406f-8937-3cf2bd05ef65",
       "name": "Aggregate3"
     },
     {
@@ -1762,15 +1762,15 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6700,
+              "fieldId": 6638,
               "fieldValue": "={{ $json.output.Prompt }}"
             },
             {
-              "fieldId": 6715,
+              "fieldId": 6639,
               "fieldValue": "={{ $('Split Out').item.json.json.duration }}"
             },
             {
-              "fieldId": 6683,
+              "fieldId": 6643,
               "fieldValue": "={{ $('Get records1').item.json['Image Provider'].value }}"
             }
           ]
@@ -1779,22 +1779,22 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        1160,
-        860
+        1560,
+        1080
       ],
-      "id": "a1fb24d3-c949-446a-ad70-c2da8a51dfee",
+      "id": "333e838a-bfd0-4730-aa0c-c125e0cd229c",
       "name": "Baserow22",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
     {
       "parameters": {
         "method": "POST",
-        "url": "http://localhost/v1/images/generations",
+        "url": "https://api.together.xyz/v1/images/generations",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -1811,15 +1811,15 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        280,
-        1660
+        680,
+        1880
       ],
-      "id": "313c279b-7473-494d-bf77-d1765d8ae965",
+      "id": "eb0e78de-034e-4490-903b-e6912bfdc7d4",
       "name": "HTTP - Together.ai",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "awwMVMXhQA6XZNVb",
-          "name": "together.ai"
+          "id": "QHjo3RJjpq54X236",
+          "name": "Header Auth account 3"
         }
       }
     },
@@ -1883,10 +1883,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        20,
-        1400
+        420,
+        1620
       ],
-      "id": "d989b683-2245-4c53-ae3c-45ed5d92a79b",
+      "id": "84c15c7d-b885-4f4b-a37f-88becae808f8",
       "name": "Switch - Image Provider"
     },
     {
@@ -1898,7 +1898,7 @@
           "filters": {
             "fields": [
               {
-                "field": 6716,
+                "field": 6641,
                 "operator": "empty"
               }
             ]
@@ -1908,15 +1908,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        -380,
-        1380
+        20,
+        1600
       ],
-      "id": "057c0007-bd8f-4595-93f0-8b7ba5c7e71b",
+      "id": "f12d24a0-199a-4143-b637-e67ff3e7ef8b",
       "name": "Get scenes",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -1944,15 +1944,15 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        280,
-        1320
+        680,
+        1540
       ],
-      "id": "2b92771a-d502-4729-983a-dcd44a99fd11",
+      "id": "11d9fcb9-c8ed-4a78-a982-b7b06bfd6fba",
       "name": "fal.ai - Submit request",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "zzftZs2LJK83E0kx",
-          "name": "fal.ai"
+          "id": "szXAJbaui7fn9EU5",
+          "name": "Header Auth account 2"
         }
       }
     },
@@ -1973,10 +1973,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1080,
-        1360
+        1480,
+        1580
       ],
-      "id": "15617bb9-d616-4bc2-ba6a-7befc39ad800",
+      "id": "0651df59-6da1-434c-989d-c6d482a48b3f",
       "name": "set status_url"
     },
     {
@@ -2007,16 +2007,16 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        660,
-        1320
+        1060,
+        1540
       ],
-      "id": "d4b29363-198f-4d4a-a386-919895123a3b",
+      "id": "d9cf72d4-7be0-4785-a743-4e7b193d7006",
       "name": "If complete"
     },
     {
       "parameters": {
         "method": "POST",
-        "url": "http://localhost:85/api/user-files/upload-file/",
+        "url": "http://host.docker.internal:80/api/user-files/upload-file/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -2035,15 +2035,15 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1300,
-        1200
+        1700,
+        1420
       ],
-      "id": "0dda8ba5-9b39-4ef5-81fd-dd5bf72a82a1",
+      "id": "3e36a04a-dddb-400c-8c2d-7fb8d777f2f3",
       "name": "HTTP - Upload To Baserow1",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "hBU71xYpGS5fc5hR",
-          "name": "baserow"
+          "id": "szXAJbaui7fn9EU5",
+          "name": "Header Auth account 2"
         }
       }
     },
@@ -2053,10 +2053,10 @@
       "name": "Passthrough",
       "typeVersion": 1,
       "position": [
-        1540,
-        1700
+        1940,
+        1920
       ],
-      "id": "e462fa16-c424-45ac-b02e-907dab3cf4b9"
+      "id": "a391d1cf-d6db-4e4a-b61d-ccb5e5cd71e7"
     },
     {
       "parameters": {
@@ -2067,10 +2067,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        220,
-        1580
+        620,
+        1800
       ],
-      "id": "3fe6716b-e69f-4407-ba05-e73b597ba0fa",
+      "id": "dc5286c3-a8ac-449d-8bf6-42f85be847d7",
       "name": "Sticky Note5"
     },
     {
@@ -2083,10 +2083,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        220,
-        1180
+        620,
+        1400
       ],
-      "id": "cc08617b-396d-498f-b998-64bf958c5b70",
+      "id": "37a2c0d1-cc7b-4676-81de-02a8d9fb697c",
       "name": "Sticky Note9"
     },
     {
@@ -2099,15 +2099,15 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        480,
-        1320
+        880,
+        1540
       ],
-      "id": "5d960c86-4254-4767-bd3a-5c8d915e44d7",
+      "id": "8afaeebd-9406-4b92-947a-5ad320c89238",
       "name": "HTTP - get status",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "zzftZs2LJK83E0kx",
-          "name": "fal.ai"
+          "id": "szXAJbaui7fn9EU5",
+          "name": "Header Auth account 2"
         }
       }
     },
@@ -2121,15 +2121,15 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        880,
-        1200
+        1280,
+        1420
       ],
-      "id": "5ffaa6e1-2af1-43e6-9845-9cfff88211fa",
+      "id": "cb619854-8a57-45d1-bde3-3814786a9f6d",
       "name": "HTTP - get image url",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "zzftZs2LJK83E0kx",
-          "name": "fal.ai"
+          "id": "szXAJbaui7fn9EU5",
+          "name": "Header Auth account 2"
         }
       }
     },
@@ -2141,10 +2141,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1080,
-        1200
+        1480,
+        1420
       ],
-      "id": "3cd265be-2efe-40a2-9e88-6bf5cba1556f",
+      "id": "b9b9ff4a-0e5d-4483-9d00-f6a4a7bbecea",
       "name": "HTTP Download Image"
     },
     {
@@ -2156,7 +2156,7 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6716,
+              "fieldId": 6637,
               "fieldValue": "={{ $json.name }}"
             }
           ]
@@ -2165,15 +2165,15 @@
       "type": "n8n-nodes-base.baserow",
       "typeVersion": 1,
       "position": [
-        1540,
-        1200
+        1940,
+        1420
       ],
-      "id": "0f9de31a-ded6-4e16-97fa-ae6408ef16b4",
+      "id": "4af0981b-188d-4a19-b512-6742baf6f157",
       "name": "Update Scene record",
       "credentials": {
         "baserowApi": {
-          "id": "iPIOBJ9feDGXFVU9",
-          "name": "Baserow account"
+          "id": "fVvrYKTmH2WvTxUr",
+          "name": "Baserow"
         }
       }
     },
@@ -2184,10 +2184,10 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        880,
-        1360
+        1280,
+        1580
       ],
-      "id": "81fe752c-7e68-470c-b955-9492e95e0fe2",
+      "id": "f196d487-b260-40c9-b5dc-761f4f60524e",
       "name": "Wait 1s",
       "webhookId": "833a4309-7169-43f7-bfc3-edfe58e50d97"
     }
@@ -2446,22 +2446,12 @@
             "index": 0
           },
           {
-            "node": "Get records",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Get records1",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Get scenes",
-            "type": "main",
-            "index": 0
-          },
-          {
             "node": "Get video1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Baserow13",
             "type": "main",
             "index": 0
           },
@@ -2476,12 +2466,22 @@
             "index": 0
           },
           {
-            "node": "Baserow13",
+            "node": "Baserow15",
             "type": "main",
             "index": 0
           },
           {
-            "node": "Baserow15",
+            "node": "Get records",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Get records1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Get scenes",
             "type": "main",
             "index": 0
           }
@@ -2604,11 +2604,6 @@
             "index": 0
           }
         ]
-      ]
-    },
-    "Baserow - Create record": {
-      "main": [
-        []
       ]
     },
     "Get video": {
@@ -2755,13 +2750,7 @@
     },
     "Convert String to binary": {
       "main": [
-        [
-          {
-            "node": "HTTP - Upload To Baserow",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "HTTP - Upload To Baserow": {
@@ -2784,11 +2773,6 @@
             "index": 0
           }
         ]
-      ]
-    },
-    "Update Record": {
-      "main": [
-        []
       ]
     },
     "IDs To Array1": {
@@ -2986,11 +2970,11 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "1649163f-e8c2-4fa0-8d16-041f1ecabeeb",
+  "versionId": "6c682442-7fb5-48c2-a590-c9e7a1dd95ba",
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "c900f1930da65b6eaa8e6c084e38b9ae6d1537749f3163a5daebff7012f11324"
+    "instanceId": "13f43bde982d352f9c1586d7ee780a16d2b1209fd5ad5398d77372130ce47b93"
   },
-  "id": "5oeTzG5pin71QPnY",
+  "id": "RY3dTj45390TLD2u",
   "tags": []
 }
