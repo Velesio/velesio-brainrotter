@@ -7,7 +7,7 @@ services:
     ports:
       - "5678:5678"
     environment:
-      - WEBHOOK_URL=http://localhost:5678
+      - WEBHOOK_URL=http://n8n:5678
       - N8N_DEFAULT_BINARY_DATA_MODE=filesystem
       - N8N_HOST=0.0.0.0
       - N8N_PORT=5678
@@ -57,7 +57,7 @@ services:
       - "443:443"
       - "3000:3000"
     environment:
-      - BASEROW_PUBLIC_URL=http://host.docker.internal:85
+      - BASEROW_PUBLIC_URL=http://baserow:80
       - BASEROW_CADDY_ADDRESSES=:80
     volumes:
       - ./baserow-data:/baserow/data
@@ -73,7 +73,7 @@ services:
       - "8080:8080"
     environment:
       - API_KEY=thekey
-      - S3_ENDPOINT_URL=http://host.docker.internal:9000
+      - S3_ENDPOINT_URL=http://minio:9000
       - S3_ACCESS_KEY=admin
       - S3_SECRET_KEY=password123
       - S3_BUCKET_NAME=nca-toolkit
