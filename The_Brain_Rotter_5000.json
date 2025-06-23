@@ -539,7 +539,7 @@
           "filters": {
             "fields": [
               {
-                "field": 6634,
+                "field": 6627,
                 "operator": "empty"
               }
             ]
@@ -570,7 +570,7 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6633,
+              "fieldId": 6627,
               "fieldValue": "={{ $json.response[0].file_url }}"
             }
           ]
@@ -600,7 +600,7 @@
           "filters": {
             "fields": [
               {
-                "field": 6629,
+                "field": 6626,
                 "operator": "empty"
               },
               {
@@ -636,7 +636,7 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6634,
+              "fieldId": 6626,
               "fieldValue": "={{ $json.response }}"
             }
           ]
@@ -666,7 +666,7 @@
           "filters": {
             "fields": [
               {
-                "field": 6622,
+                "field": 6625,
                 "operator": "empty"
               },
               {
@@ -1086,7 +1086,7 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6637,
+              "fieldId": 6640,
               "fieldValue": "={{ $json.name }}"
             }
           ]
@@ -1194,7 +1194,7 @@
           "filters": {
             "fields": [
               {
-                "field": 6629,
+                "field": 6628,
                 "operator": "empty"
               },
               {
@@ -1260,7 +1260,7 @@
         "fieldsUi": {
           "fieldValues": [
             {
-              "fieldId": 6634,
+              "fieldId": 6628,
               "fieldValue": "={{ $json.response }}"
             }
           ]
@@ -1363,6 +1363,10 @@
                 "field": 6634,
                 "operator": "contains",
                 "value": "Processing"
+              },
+              {
+                "field": 6629,
+                "operator": "empty"
               }
             ]
           }
@@ -1392,7 +1396,7 @@
           "filters": {
             "fields": [
               {
-                "field": 6629,
+                "field": 6628,
                 "operator": "empty"
               },
               {
@@ -1898,7 +1902,7 @@
           "filters": {
             "fields": [
               {
-                "field": 6641,
+                "field": 6640,
                 "operator": "empty"
               }
             ]
@@ -2750,7 +2754,13 @@
     },
     "Convert String to binary": {
       "main": [
-        []
+        [
+          {
+            "node": "HTTP - Upload To Baserow",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     },
     "HTTP - Upload To Baserow": {
@@ -2970,7 +2980,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "6c682442-7fb5-48c2-a590-c9e7a1dd95ba",
+  "versionId": "abfda24c-e3fe-46c3-9471-33033fc9c346",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "13f43bde982d352f9c1586d7ee780a16d2b1209fd5ad5398d77372130ce47b93"
