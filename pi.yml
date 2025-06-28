@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+
+  minio:
+    image: quay.io/minio/minio:RELEASE.2025-04-22T22-12-26Z
+    container_name: minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    command: server /data --address ":9000" --console-address ":9001"
+    environment:
+      - MINIO_ROOT_USER=admin
+      - MINIO_ROOT_PASSWORD=password123
+    volumes:
+      - ./minio-data:/data
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  baserow:
+    image: baserow/baserow:1.32.5
+    container_name: baserow-app
+    ports:
+      - "80:80"
+      - "443:443"
+      - "3000:3000"
+    environment:
+      - BASEROW_PUBLIC_URL=http://host.docker.internal:80
+      - BASEROW_CADDY_ADDRESSES=:80
+    volumes:
+      - ./baserow-data:/baserow/data
+    restart: unless-stopped
+    shm_size: "256mb"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
